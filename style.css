@@ -1,25 +1,31 @@
 /* Using Google fonts poppins */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
 
-/* common to all */
+/* ----------------------------- common to all -------------*/
 body{
     font-family: 'Poppins', sans-serif;
     background-color: aqua;
 }
 main{
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     width: 1050px;
     height: 474px;
     padding: 15px;
-    background-color: white;
-    
-    
+    background-color: white;   
    
 }
-.top-three-cards{
+
+
+/* ---------------------------------------------
+                        First three cards section 
+----------------------------------------------------*/
+.first-three-cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
@@ -27,6 +33,7 @@ main{
 .cards{
     width: 330px;
     height: 474px;  
+    background-color: white;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -44,4 +51,32 @@ main{
 .card-details{
     padding: 15px;
     padding-top: 0px;
+}
+
+/* ---------------------------------------------
+                        Second  three cards section
+----------------------------------------------------*/
+
+.second-three-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+}
+/* -------------------------------------------
+                        Third  three cards section
+----------------------------------------------------*/
+
+.third-three-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
+}
+/* -------------------------------------------
+                        last  three cards section
+----------------------------------------------------*/
+
+.last-three-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-column-gap: 30px;
 }
