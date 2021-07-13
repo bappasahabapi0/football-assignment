@@ -80,3 +80,41 @@ main{
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
 }
+/* -------------------------------------------
+                       Footer part 
+----------------------------------------------------*/
+footer{
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; */
+
+}
+.foot-container{
+    background-color:white;
+    /* background-color: violet; */
+    width: 484px;
+    height: 213px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo img{
+    width: 300px;
+}
+
+.social-icons .fab{
+   font-size: 25px;
+   padding-right: 10px;
+}
+.fab:hover{
+   color:  #4267B2;
+   /* font-size: 25px; */
+   transform: rotate(180deg);
+   transition: transform .5s;
+  
+}
+
+
+
+
