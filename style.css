@@ -156,6 +156,45 @@ main{
     grid-template-columns: repeat(3,1fr);
     grid-column-gap: 30px;
 }
+
+/* -------------------------------------
+       Watch live sesction 
+----------------------------------------- */
+.watch-live{
+   display: flex;
+   justify-content: center;
+   align-items: center; 
+   
+}
+
+
+
+
+/* -------------------------------------
+        Explore and visit sesction 
+----------------------------------------- */
+.copa-heading{
+    font-size: 40px;
+    color:  #4267B2;
+}
+.explore-visit{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.cope-title{
+    color: cornflowerblue;
+    font-weight: bolder;
+    font-size: 25px;
+}
+.copa-explore>p>a,.copa-visit>p>a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+
+
 /* -------------------------------------------
                        Footer part 
 ----------------------------------------------------*/
@@ -195,18 +234,7 @@ footer{
    transition: transform .5s;
   
 }
-/* -------------------------------------
-        Explore and visit sesction 
------------------------------------------ */
-.explore-visit{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-}
-.copa-explore>p>a,.copa-visit>p>a{
-    text-decoration: none;
-    color: black;
-    cursor: pointer;
-}
+
 
 
 
@@ -269,6 +297,12 @@ footer{
             display: grid;
             grid-template-columns: repeat(1, 1fr);
             grid-row-gap: 24px;
+        }
+        .live-heading>h2{
+            text-align: center;
+        }
+        iframe{
+            width: 330px;
         }
 
 
