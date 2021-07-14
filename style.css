@@ -187,7 +187,18 @@ footer{
 /* -------------------------- -------------------
                     using media queries
 ---------------------------------------- */
-
+@media only screen and (min-width: 688px) and (max-width:991px)
+{
+            .container{
+                width: 660px;
+                height: 100%;
+            }
+            .first-three-cards,.second-three-cards,.third-three-cards,.last-three-cards{
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                grid-row-gap: 24px;
+            }
+}
     @media only  screen and (max-width: 688px)
     {
         
@@ -203,12 +214,7 @@ footer{
 
          /* for ipad devices 689 to 991px */
        /* @media only screen and (max-width:991px) */
-       @media screen and (min-width: 688px) and (max-width:991px)
-       {
-           .container{
-              background-color: blueviolet;
-           }
-       }
+      
 
            
        
