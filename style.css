@@ -9,19 +9,6 @@ body{
     margin: 0;
     padding: 0;
 }
-main{
-    display: flex;
-    /* justify-content: center; */
-    flex-direction: column;
-    align-items: center;
-}
-.container{
-    width: 1050px;
-    height: 474px;
-    padding: 15px;
-    background-color: white;   
-   
-}
 
 /* -------------------------------- */
 
@@ -31,20 +18,21 @@ main{
 
 .head-container{
    
-    min-width: 1440px;
-    /* width: 100%; */
+    /* width: 1520px; */
+    width: 100%;
     height: 677px;
     background-color: #2D25A0;
     display: flex;
     justify-content: center;
-    margin-left: 140px;
-    margin-right: 140px;
+    
+    /* padding-left: 80px;
+    margin-right: 140px; */
     padding-top: 153px;
 }
 .heading-details{
   margin-right: 102px;
    border: 2px solid white;
-   width: 800px;
+   width: 500px;
    height: 400px;   
 }
 .heading h1{
@@ -80,9 +68,28 @@ main{
     transition: transform 1s ease-in;
 }
 
+        /* common for all section */
+main{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    height: 474px;
+    padding: 15px;
+    background-color: white;   
+   
+}
+
+
+
 /* ---------------------------------------------
                         First three cards section 
 ----------------------------------------------------*/
+
+
 .first-three-cards{
     display: grid;
     grid-template-columns: repeat(3,1fr);
@@ -181,8 +188,38 @@ footer{
                     using media queries
 ---------------------------------------- */
 
-                    /* FOR MOBILE DEVICE */
+    @media only  screen and (max-width: 688px)
+    {
+        
+        .container{
+           width: 330px;
+           height: 100%;         
+        }
+        .first-three-cards,.second-three-cards,.third-three-cards,.last-three-cards{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            grid-row-gap: 24px;
+        }
 
+         /* for ipad devices 689 to 991px */
+       /* @media only screen and (max-width:991px) */
+       @media screen and (min-width: 688px) and (max-width:991px)
+       {
+           .container{
+              background-color: blueviolet;
+           }
+       }
+
+           
+       
+
+
+
+
+
+
+                    /* FOR MOBILE DEVICE */
+/* 
 @media (max-width:668px)
 {
     .head-container{
@@ -191,10 +228,10 @@ footer{
         margin-left: 0;
         margin-top: 0;
         /* background-color: palevioletred; */
-        display: grid;
+        /* display: grid;
         grid-template-columns: repeat(1 ,1fr);
-    }
-    .heading-details{
+    } */
+    /* .heading-details{
         margin-left: 18px;
         margin-top: -112px;
     }
@@ -212,7 +249,10 @@ footer{
                background-color: green;
      }
      
-  }    /* ------------------ CARDS SECTION----- */
+  }    */
+   
+  
+  /* ------------------ CARDS SECTION----- */
    
 
 
