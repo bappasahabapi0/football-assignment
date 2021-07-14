@@ -41,17 +41,24 @@ body{
  color: white;
  font-size: 64px;
 }
+.heading h1:hover{
+  transform: scaleX(1.4);
+  transition: transform 2s;
+}
 .heading-details> .live-button a{
     background-color: #e91f69;
     color: white;
     padding: 10px 24px;
     text-decoration: none;
     cursor: pointer;
+    
    
 }
 .heading-details> .live-button:hover a {
-    background-color: rgb(245, 8, 8);  
-    transition: background-color .5s;
+    background-color:white;  
+    color: black;
+    transition: background-color 1s ease-in;
+   
     
 }
 
@@ -68,7 +75,10 @@ body{
     transition: transform 1s ease-in;
 }
 
-        /* common for all section */
+        /* common for all card sections*/
+
+
+
 main{
     display: flex;
     /* justify-content: center; */
@@ -80,6 +90,7 @@ main{
     height: 474px;
     padding: 15px;
     background-color: white;   
+    border: 2px solid black;
    
 }
 
@@ -184,6 +195,25 @@ footer{
    transition: transform .5s;
   
 }
+/* -------------------------------------
+        Explore and visit sesction 
+----------------------------------------- */
+.explore-visit{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+.copa-explore>p>a,.copa-visit>p>a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
 /* -------------------------- -------------------
                     using media queries
 ---------------------------------------- */
@@ -192,6 +222,7 @@ footer{
 
 @media only screen and (min-width: 688px) and (max-width:991px)
 {
+    
             .container{
                 width: 660px;
                 height: 100%;
@@ -205,6 +236,30 @@ footer{
      /*---------------------- FOR MOBILE DEVICE------------------------------------- */
     @media only  screen and (max-width: 688px)
     {
+        .head-container{
+            width: 500px;
+            height: 695px;
+           
+            margin-top: 0;
+            background-color: #2D25A0;
+            display: grid;
+            grid-template-columns: repeat(1 ,1fr);
+        } 
+        .heading-details{
+            width: 330px;
+            margin-left:80px;
+            margin-top: -112px;
+            text-align: left;
+        }
+        .heading h1{
+            font-size: 34px;      
+            
+        }
+        .body-details img{
+            margin-top: 50px;
+            width: 330px;
+            margin-left: 60px;
+        }   
         
         .container{
            width: 330px;
@@ -217,35 +272,7 @@ footer{
         }
 
 
-
-@media (max-width:668px)
-{
-    .head-container{
-        width: 500px;
-        height: 695px;
-       
-        margin-top: 0;
-        background-color: #2D25A0;
-        display: grid;
-        grid-template-columns: repeat(1 ,1fr);
-    } 
-    .heading-details{
-        width: 330px;
-        margin-left:80px;
-        margin-top: -112px;
-        text-align: left;
-    }
-    .heading h1{
-        font-size: 34px;      
-        
-    }
-    .body-details img{
-        margin-top: 50px;
-        width: 330px;
-        margin-left: 60px;
-    }    
-     
-  }    
+  
    
   
 
