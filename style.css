@@ -45,8 +45,7 @@ main{
   margin-right: 102px;
    border: 2px solid white;
    width: 800px;
-   height: 400px;
-    
+   height: 400px;   
 }
 .heading h1{
  margin-top: 70px;
@@ -62,12 +61,11 @@ main{
     cursor: pointer;
    
 }
-.heading-details> .live-button:hover a{
-    background-color: red;  
-    font-size: 20px;
-    transition: font-size 1s ease-in-out;
+.heading-details> .live-button:hover a {
+    background-color: rgb(245, 8, 8);  
+    transition: background-color .5s;
+    
 }
-
 
 .body-details{
     width: 556px;
@@ -76,6 +74,10 @@ main{
 }
 .body-details img{
     width: 100%;
+}
+.body-details img:hover{
+    transform:scale(1.3);
+    transition: transform 1s ease-in;
 }
 
 /* ---------------------------------------------
@@ -175,6 +177,43 @@ footer{
    transition: transform .5s;
   
 }
+/* -------------------------- -------------------
+                    using media queries
+---------------------------------------- */
+
+                    /* FOR MOBILE DEVICE */
+
+@media (max-width:668px)
+{
+    .head-container{
+        width: 360px;
+        height: 695px;
+        margin-left: 0;
+        margin-top: 0;
+        /* background-color: palevioletred; */
+        display: grid;
+        grid-template-columns: repeat(1 ,1fr);
+    }
+    .heading-details{
+        margin-left: 18px;
+        margin-top: -112px;
+    }
+    .heading h1{
+        font-size: 34px;
+        
+        
+    }
+    .body-details img{
+        width: 60%;
+        margin-left: 20px;
+    }
+    
+     .first-three-cards{
+               background-color: green;
+     }
+     
+  }    /* ------------------ CARDS SECTION----- */
+   
 
 
 
