@@ -5,7 +5,7 @@
 /* ----------------------------- common to all -------------*/
 body{
     font-family: 'Poppins', sans-serif;
-    background-color: aqua;
+    /* background-color: aqua; */
     margin: 0;
     padding: 0;
 }
@@ -31,7 +31,7 @@ body{
 }
 .heading-details{
   margin-right: 102px;
-   border: 2px solid white;
+   /* border: 2px solid white; */
    width: 500px;
    height: 400px;   
 }
@@ -58,7 +58,7 @@ body{
 .body-details{
     width: 556px;
     height: 438px;
-    border: 2px solid white;
+    /* border: 2px solid white; */
 }
 .body-details img{
     width: 100%;
@@ -187,6 +187,9 @@ footer{
 /* -------------------------- -------------------
                     using media queries
 ---------------------------------------- */
+
+ /* -------------------------------- for ipad devices 689 to 991px ----------------------- */
+
 @media only screen and (min-width: 688px) and (max-width:991px)
 {
             .container{
@@ -199,6 +202,7 @@ footer{
                 grid-row-gap: 24px;
             }
 }
+     /*---------------------- FOR MOBILE DEVICE------------------------------------- */
     @media only  screen and (max-width: 688px)
     {
         
@@ -212,53 +216,39 @@ footer{
             grid-row-gap: 24px;
         }
 
-         /* for ipad devices 689 to 991px */
-       /* @media only screen and (max-width:991px) */
-      
-
-           
-       
 
 
-
-
-
-
-                    /* FOR MOBILE DEVICE */
-/* 
 @media (max-width:668px)
 {
     .head-container{
-        width: 360px;
+        width: 500px;
         height: 695px;
-        margin-left: 0;
+       
         margin-top: 0;
-        /* background-color: palevioletred; */
-        /* display: grid;
+        background-color: #2D25A0;
+        display: grid;
         grid-template-columns: repeat(1 ,1fr);
-    } */
-    /* .heading-details{
-        margin-left: 18px;
+    } 
+    .heading-details{
+        width: 330px;
+        margin-left:80px;
         margin-top: -112px;
+        text-align: left;
     }
     .heading h1{
-        font-size: 34px;
-        
+        font-size: 34px;      
         
     }
     .body-details img{
-        width: 60%;
-        margin-left: 20px;
-    }
-    
-     .first-three-cards{
-               background-color: green;
-     }
+        margin-top: 50px;
+        width: 330px;
+        margin-left: 60px;
+    }    
      
-  }    */
+  }    
    
   
-  /* ------------------ CARDS SECTION----- */
+
    
 
 
